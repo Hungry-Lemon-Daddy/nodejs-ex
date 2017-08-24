@@ -348,8 +348,6 @@ var Chat;
                 });
             }
             this.internallistener = server.listen(this.nodePort, this.localServer);
-
-			console.log("Listening on " + localServer + ", server_port " + nodePort);
 			
             // Socket Communications
             this.listener = Utils.IO.listen(server, this.localServer);
